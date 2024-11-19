@@ -1,8 +1,7 @@
 #pragma once
+#include "asio.hpp"
 #include <boost/asio.hpp>
 #include "AsioIoContext.h"
-
-using boost::asio;
 
 /*
 namespace Network
@@ -50,7 +49,7 @@ public:
 	virtual bool Release();
 
 private:
-	asio::ip::tcp::acctoptor m_Acceptor;
+	boost::asio::ip::tcp::acctoptor m_Acceptor;
 };
 
 class server
