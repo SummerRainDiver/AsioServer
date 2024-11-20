@@ -4,9 +4,6 @@
     <Filter Include="Asio">
       <UniqueIdentifier>{196a4a2a-37b8-4885-aa7c-a2212a49d3ea}</UniqueIdentifier>
     </Filter>
-    <Filter Include="NetCore">
-      <UniqueIdentifier>{8e79433c-1bf0-4ca2-a7fb-a308b7dd8388}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AsioClient.cpp">

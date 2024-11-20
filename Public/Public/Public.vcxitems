@@ -14,9 +14,11 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Network\SocketChannelBase.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Packet.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Network\SocketChannelBase.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Packet.h" />
   </ItemGroup>
 </Project>
