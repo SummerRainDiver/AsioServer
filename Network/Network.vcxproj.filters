@@ -18,6 +18,7 @@
     <ClCompile Include="AsioIoContext.cpp">
       <Filter>Asio</Filter>
     </ClCompile>
+    <ClCompile Include="Session.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AsioClient.h">
@@ -32,5 +33,6 @@
     <ClInclude Include="AsioIoContext.h">
       <Filter>Asio</Filter>
     </ClInclude>
+    <ClInclude Include="Session.h" />
   </ItemGroup>
 </Project>

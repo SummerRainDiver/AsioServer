@@ -133,12 +133,14 @@
     <ClCompile Include="AsioIoContext.cpp" />
     <ClCompile Include="AsioServer.cpp" />
     <ClCompile Include="AsioSocketChannel.cpp" />
+    <ClCompile Include="Session.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AsioClient.h" />
     <ClInclude Include="AsioIoContext.h" />
     <ClInclude Include="AsioServer.h" />
     <ClInclude Include="AsioSocketChannel.h" />
+    <ClInclude Include="Session.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

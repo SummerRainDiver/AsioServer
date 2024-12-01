@@ -1,19 +1,17 @@
 #include "Server.h"
 
-void Server::do_accept()
+void Server::Init()
 {
-	tcp::acceptor acceptor_;
-
-	acceptor_.async_accept(
-		[this](boost::system::error_code ec, tcp::socket socket)
-	{
-		if (!ec)
-		{
-			std::make_shared<session>(std::move(socket))->start();
-		}
-
-		cout << "Client connected..." << endl; // 여기도 클라마다 순번 부여하기.
-		do_accept();
-	});
+	boost::asio::io_context io_context;
+	tcp::acceptor acceptor_(io_context, tcp::endpoint(tcp::v4(), 3100));
+	AsioServer::DoAccept();
+	io_context.run();
 
 }
+
+void Server::Terminate()
+{
+	// acceptor_.close();
+}
+
+// 코드를 짜다보니까 Server, AsioServer 둘다 필요하진 않은 것 같음. 
