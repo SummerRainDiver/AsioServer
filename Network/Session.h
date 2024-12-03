@@ -3,8 +3,8 @@
 #include "AsioSocketChannel.h"
 #include <iostream>
 
-using boost::asio::ip::tcp;
 using namespace std;
+using boost::asio::ip::tcp;
 
 class Session
     : public std::enable_shared_from_this<Session>
@@ -14,6 +14,7 @@ public:
         : socket_(std::move(socket))
     {
     }
+	virtual ~Session() {}
 
 public:
     void Start();

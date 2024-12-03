@@ -13,23 +13,26 @@ class AsioServer
 {
 public:
 	AsioServer();
-	virtual ~AsioServer();
+	//virtual ~AsioServer();
 
 	// 이거 쓸까말까 고민중. 
+	/*
 	AsioServer(boost::asio::io_context& ioContext, unsigned short port)
 		: m_Acceptor(ioContext, boost::asio::ip::tcp::endpoint(tcp::v4(), port))
 	{
 		DoAccept();
 	}
+	*/
 
 public:
-	virtual bool Initialize();
-	virtual bool Listen();
-	virtual bool Stop();
-	virtual bool Release();
+	void Initialize();
+	//virtual bool Listen();
+	//virtual bool Stop();
+	//virtual bool Release();
 
 private:
-	void DoAccept();
+	void Accept();
 
 	tcp::acceptor m_Acceptor;
+	const unsigned short PORT_NUMBER = 3100;
 };

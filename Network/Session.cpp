@@ -2,7 +2,7 @@
 
 void Session::Start()
 {
-    cout << "Session on..." << endl; // 세션풀 만들고 세션 마다 번호 붙여서 로그 찍혔으면 좋겠음.  
+    cout << "Session on..." << endl; // 세션풀 만들고 세션 마다 번호 붙여서 로그 추가
     DoRead();
 }
 
@@ -32,7 +32,7 @@ void Session::DoWrite(std::size_t length)
 		{
 			if (!ec)
 			{
-				cout << "Trying to read Client message..." << endl;
+				cout << "Trying to read message..." << endl;
 				DoRead();
 			}
 		});

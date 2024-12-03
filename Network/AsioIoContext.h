@@ -1,8 +1,14 @@
 #pragma once
-#include "asio.hpp"
-#include <asio/io_context.hpp>
+//#include <asio/io_context.hpp>
 #include <thread>
 #include <vector>
+
+#include <boost/asio.hpp>
+
+#include <iostream>
+
+using boost::asio::ip::tcp;
+using namespace std;
 
 class AsioIoContext
 {

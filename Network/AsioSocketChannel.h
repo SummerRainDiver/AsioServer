@@ -1,7 +1,6 @@
 #pragma once
-#include "asio.hpp"
 #include "AsioServer.h"
-#include "AsioClient.h"
+//#include "AsioClient.h"
 
 class AsioSocketChannel
 {
@@ -26,4 +25,4 @@ public:
 	virtual void OnRead(const boost::system::error_code& error, size_t bytes_transferred);
 	virtual void OnWrite(const boost::system::error_code& error, size_t bytes_transferred);
 	virtual void OnClose();
-}
+};

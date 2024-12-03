@@ -105,6 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\Network\ThirdParty\asio\asio;..\Network\ThirdParty\asio</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,14 +130,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AsioClient.cpp" />
     <ClCompile Include="AsioIoContext.cpp" />
     <ClCompile Include="AsioServer.cpp" />
     <ClCompile Include="AsioSocketChannel.cpp" />
     <ClCompile Include="Session.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AsioClient.h" />
     <ClInclude Include="AsioIoContext.h" />
     <ClInclude Include="AsioServer.h" />
     <ClInclude Include="AsioSocketChannel.h" />

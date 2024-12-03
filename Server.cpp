@@ -4,7 +4,7 @@ void Server::Init()
 {
 	boost::asio::io_context io_context;
 	tcp::acceptor acceptor_(io_context, tcp::endpoint(tcp::v4(), 3100));
-	AsioServer::DoAccept();
+	//AsioServer::Accept();
 	io_context.run();
 
 }
